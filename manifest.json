@@ -1,0 +1,16 @@
+{
+    "name": "EduParse",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Extension to parse data and generate practice tests",
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://127.0.0.1:5000/"
+    ]
+}

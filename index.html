@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Practice Tests!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="generateTests.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">EduParse</h1>
+        <div class="option">
+            <label for="pdfUpload" class="option-heading">Upload PDF File:</label>
+            <input type="file" id="pdfUpload" accept=".pdf">
+        </div>
+        <div class="option">
+            <h2 class="option-heading">Number of Questions</h2>
+            <input type="number" id="amount" placeholder="0-15" min="0" max="15">
+        </div>
+        <div class="option">
+            <h2 class="option-heading">Test Type</h2>
+            <select id="test_type">
+                <option value="Multiple Choice">Multiple Choice</option>
+                <option value="Long Answers">Long Answers</option>
+            </select>
+        </div>
+        <button id="generate" class="generate-button">Generate Now</button>
+        <div id="result" class="result"></div>
+    </div>
+</body>
+</html>

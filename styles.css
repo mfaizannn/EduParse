@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f9f4; /* Light green background color */
+    overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    width: 90%; /* Use percentage width to adapt to different screen sizes */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White container background color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.title {
+    color: #238636; /* Dark green title color */
+}
+
+.option {
+    margin-bottom: 20px;
+}
+
+.option-heading {
+    color: #238636; /* Dark green option heading color */
+}
+
+input[type="number"],
+select {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #238636; /* Dark green border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #238636; /* Dark green border on focus */
+}
+
+.generate-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #238636; /* Dark green button background color */
+    color: #ffffff; /* White button text color */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-button:hover {
+    background-color: #1d7031; /* Darker green on hover */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #238636; /* Dark green result text color */
+}
